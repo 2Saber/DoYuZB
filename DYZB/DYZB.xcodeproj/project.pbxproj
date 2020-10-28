@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		0556904E25490D2F009F1AA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556904D25490D2F009F1AA1 /* AppDelegate.swift */; };
-		0556905225490D2F009F1AA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556905125490D2F009F1AA1 /* ViewController.swift */; };
 		0556905525490D2F009F1AA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0556905325490D2F009F1AA1 /* Main.storyboard */; };
 		0556905825490D2F009F1AA1 /* DYZB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0556905625490D2F009F1AA1 /* DYZB.xcdatamodeld */; };
 		0556905A25490D30009F1AA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0556905925490D30009F1AA1 /* Assets.xcassets */; };
 		0556905D25490D30009F1AA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0556905B25490D30009F1AA1 /* LaunchScreen.storyboard */; };
 		0556906825490D31009F1AA1 /* DYZBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556906725490D31009F1AA1 /* DYZBTests.swift */; };
 		0556907325490D31009F1AA1 /* DYZBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556907225490D31009F1AA1 /* DYZBUITests.swift */; };
+		0556909925491491009F1AA1 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556909825491491009F1AA1 /* TabbarViewController.swift */; };
+		055690A1254915BE009F1AA1 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055690A0254915BE009F1AA1 /* NavigationViewController.swift */; };
+		055690AB2549174B009F1AA1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055690AA2549174B009F1AA1 /* BaseViewController.swift */; };
+		055690B32549178A009F1AA1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055690B22549178A009F1AA1 /* HomeViewController.swift */; };
+		055690B825491795009F1AA1 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055690B725491795009F1AA1 /* LiveViewController.swift */; };
+		055690BD2549179E009F1AA1 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055690BC2549179E009F1AA1 /* FollowViewController.swift */; };
+		055690C2254917A8009F1AA1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055690C1254917A8009F1AA1 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +43,6 @@
 /* Begin PBXFileReference section */
 		0556904A25490D2F009F1AA1 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0556904D25490D2F009F1AA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0556905125490D2F009F1AA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0556905425490D2F009F1AA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0556905725490D2F009F1AA1 /* DYZB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DYZB.xcdatamodel; sourceTree = "<group>"; };
 		0556905925490D30009F1AA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		0556906E25490D31009F1AA1 /* DYZBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYZBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0556907225490D31009F1AA1 /* DYZBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYZBUITests.swift; sourceTree = "<group>"; };
 		0556907425490D31009F1AA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0556909825491491009F1AA1 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		055690A0254915BE009F1AA1 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		055690AA2549174B009F1AA1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		055690B22549178A009F1AA1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		055690B725491795009F1AA1 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		055690BC2549179E009F1AA1 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		055690C1254917A8009F1AA1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				0556905325490D2F009F1AA1 /* Main.storyboard */,
-				0556905125490D2F009F1AA1 /* ViewController.swift */,
+				0556909825491491009F1AA1 /* TabbarViewController.swift */,
+				055690A0254915BE009F1AA1 /* NavigationViewController.swift */,
+				055690AA2549174B009F1AA1 /* BaseViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -160,6 +174,7 @@
 		0556908D25490DF1009F1AA1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				055690B22549178A009F1AA1 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -167,6 +182,7 @@
 		0556908E25490E0A009F1AA1 /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				055690B725491795009F1AA1 /* LiveViewController.swift */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -174,6 +190,7 @@
 		0556908F25490E12009F1AA1 /* Follow */ = {
 			isa = PBXGroup;
 			children = (
+				055690BC2549179E009F1AA1 /* FollowViewController.swift */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -181,6 +198,7 @@
 		0556909025490E16009F1AA1 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				055690C1254917A8009F1AA1 /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -322,9 +340,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0556905225490D2F009F1AA1 /* ViewController.swift in Sources */,
+				0556909925491491009F1AA1 /* TabbarViewController.swift in Sources */,
+				055690C2254917A8009F1AA1 /* ProfileViewController.swift in Sources */,
+				055690B825491795009F1AA1 /* LiveViewController.swift in Sources */,
+				055690BD2549179E009F1AA1 /* FollowViewController.swift in Sources */,
 				0556904E25490D2F009F1AA1 /* AppDelegate.swift in Sources */,
+				055690A1254915BE009F1AA1 /* NavigationViewController.swift in Sources */,
 				0556905825490D2F009F1AA1 /* DYZB.xcdatamodeld in Sources */,
+				055690B32549178A009F1AA1 /* HomeViewController.swift in Sources */,
+				055690AB2549174B009F1AA1 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +524,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage ";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = DYZB/Source/Info.plist;
@@ -521,6 +546,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage ";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = DYZB/Source/Info.plist;
