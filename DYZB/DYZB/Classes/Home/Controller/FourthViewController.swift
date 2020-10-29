@@ -1,18 +1,18 @@
 //
-//  HomeViewController.swift
+//  FourthViewController.swift
 //  DYZB
 //
-//  Created by saber on 2020/10/28.
+//  Created by saber on 2020/10/29.
 //
 
 import UIKit
 
-class HomeViewController: BaseViewController {
+class FourthViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .red
+        // Do any additional setup after loading the view.
     }
     
 

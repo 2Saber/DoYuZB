@@ -11,14 +11,19 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let tmp = UIWindow(frame: UIScreen.main.bounds)
-        window? = tmp
-//        window? = UIWindow(frame: UIScreen.main.bounds)
+        window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
         window?.rootViewController = TabbarViewController()
         window?.makeKeyAndVisible()
+        
+        UITabBar.appearance().barTintColor = .white
+        UITabBar.appearance().tintColor = .orange
         return true
+        
+        
     }
 }
+
 
