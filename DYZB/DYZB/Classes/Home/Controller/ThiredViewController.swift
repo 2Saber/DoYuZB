@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ThiredViewController: BaseViewController {
+class ThiredViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

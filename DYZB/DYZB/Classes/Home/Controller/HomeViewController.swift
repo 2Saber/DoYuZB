@@ -12,14 +12,13 @@ class HomeViewController: BaseViewController {
         let frame = CGRect(x: 0, y: kStatusBarH + kNavbarH, width: Double(kScreenW), height: kTabBarH)
         return PageTitleView(frame: frame, titles: ["推荐", "游戏", "娱乐", "趣玩"])
     }()
-//    lazy fileprivate var pageContView: PageContView  = {
-//        let frame = CGRect(x: 0, y: kTabBarH + kStatusBarH + kNavbarH, width: Double(kScreenW), height: Double(kScreenH) - kTabBarH - kStatusBarH - kNavbarH)
-//        var childVCs= [BaseViewController]()
-//        chil
-////        childVCs.
-////        let pageContView =  PageContView(frame: frame, childVCs: [UIViewController], parentVC: <#T##BaseViewController#>)
-//        return pageContView
-//    }()
+    lazy fileprivate var pageContView: PageContView  = {
+        let frame = CGRect(x: 0, y: kTabBarH + kStatusBarH + kNavbarH, width: Double(kScreenW), height: Double(kScreenH) - kTabBarH - kStatusBarH - kNavbarH)
+        var childVCs = [FirstViewController(), SecondViewController(), ThiredViewController(), FourthViewController()]
+        let pageContView = PageContView(frame: frame, childVCs: childVCs, parentVC: self)
+
+        return pageContView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +32,7 @@ fileprivate extension HomeViewController{
         
         setupNavigationBar()
         view.addSubview(pageTitleView)
-//        view.addSubview(PageContView)
+        view.addSubview(pageContView)
     }
     
     func setupNavigationBar() {
@@ -46,4 +45,10 @@ fileprivate extension HomeViewController{
     }
     
     
+}
+//MARK:-delegate
+extension HomeViewController: pageTitleViewDelegate {
+    func pageTitleView(_ titleView: PageTitleView, selectedIndex currentIndx: Int) {
+        pageContView.setCurrentItem(currentIndx)
+    }
 }

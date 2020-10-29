@@ -12,11 +12,17 @@ private let kNormalColor: (CGFloat, CGFloat, CGFloat) = (85, 85, 85)
 private let kSelectColor: (CGFloat, CGFloat, CGFloat) = (255, 128, 0)
 // 滚动下划线的高度
 private let scrollLineH = 2.0
+//MARK:- pageTitleViewDelegate
+protocol pageTitleViewDelegate: class {
+    func pageTitleView(_ titleView: PageTitleView, selectedIndex currentIndx: Int)
+}
+
 class PageTitleView: UIView {
     //MARK:- 定义属性
     fileprivate let subLineH = 0.5
     fileprivate var titles : [String]
     fileprivate var currIndex = 0
+    weak var deleget : pageTitleViewDelegate?
     
     lazy fileprivate var titleLabels: [UILabel] = [UILabel]()
     lazy fileprivate var scrollView: UIScrollView = {
@@ -111,6 +117,12 @@ fileprivate extension PageTitleView{
         UIView.animate(withDuration: 0.15) {
             self.scrolLine.frame.origin.x = scrollLineX
         }
+        deleget?.pageTitleView(self, selectedIndex: currIndex)
+    }
+}
+//MARK:- 外接接口
+extension PageTitleView{
+    func setCurrentIndex(_ currenIndex: Int)  {
         
     }
 }
