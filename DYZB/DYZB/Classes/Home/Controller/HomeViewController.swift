@@ -6,17 +6,19 @@
 //
 
 import UIKit
-
-class HomeViewController: BaseViewController {
+let kTitleViewH : Double = 40
+class HomeViewController: BaseViewController { 
     lazy fileprivate var pageTitleView: PageTitleView = { [weak self] in
-        let frame = CGRect(x: 0, y: kStatusBarH + kNavbarH, width: Double(kScreenW), height: kTabBarH)
-        return PageTitleView(frame: frame, titles: ["推荐", "游戏", "娱乐", "趣玩"])
+        let frame = CGRect(x: 0, y: kStatusBarH + kNavbarH, width: Double(kScreenW), height: kTitleViewH)
+        let pageTitleView = PageTitleView(frame: frame, titles: ["推荐", "游戏", "娱乐", "趣玩"])
+        pageTitleView.deleget = self
+        return pageTitleView
     }()
-    lazy fileprivate var pageContView: PageContView  = {
-        let frame = CGRect(x: 0, y: kTabBarH + kStatusBarH + kNavbarH, width: Double(kScreenW), height: Double(kScreenH) - kTabBarH - kStatusBarH - kNavbarH)
+    lazy fileprivate var pageContView: PageContView  = { [weak self] in
+        let frame = CGRect(x: 0, y: kTitleViewH + kStatusBarH + kNavbarH, width: Double(kScreenW), height: Double(kScreenH) - kTabBarH - kStatusBarH - kNavbarH - kTitleViewH )
         var childVCs = [FirstViewController(), SecondViewController(), ThiredViewController(), FourthViewController()]
-        let pageContView = PageContView(frame: frame, childVCs: childVCs, parentVC: self)
-
+        let pageContView = PageContView(frame: frame, childVCs: childVCs, parentVC: self!)
+        pageContView.delegate = self
         return pageContView
     }()
     
@@ -51,4 +53,10 @@ extension HomeViewController: pageTitleViewDelegate {
     func pageTitleView(_ titleView: PageTitleView, selectedIndex currentIndx: Int) {
         pageContView.setCurrentItem(currentIndx)
     }
+}
+extension HomeViewController: pageContViewDelegate{
+    func pageContView(PageContView: PageContView, sourIndex oldIndex: Int, trageIndex willIndx: Int, progress ration: CGFloat) {
+        pageTitleView.setCurrentIndex(sourIndex: oldIndex, targeIndex: willIndx, progress: ration)
+    }
+    
 }

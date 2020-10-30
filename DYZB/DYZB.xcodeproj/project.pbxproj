@@ -30,6 +30,12 @@
 		055690BD2549179E009F1AA1 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055690BC2549179E009F1AA1 /* FollowViewController.swift */; };
 		055690C2254917A8009F1AA1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055690C1254917A8009F1AA1 /* ProfileViewController.swift */; };
 		05569158254971D1009F1AA1 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05569157254971D1009F1AA1 /* UIBarButtonItem-Extension.swift */; };
+		05C85942254BC6A800072C60 /* CollectionNormalViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C85940254BC6A800072C60 /* CollectionNormalViewCell.swift */; };
+		05C85943254BC6A800072C60 /* CollectionNormalViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C85941254BC6A800072C60 /* CollectionNormalViewCell.xib */; };
+		05C85949254BD96100072C60 /* CollectionPrettyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C85947254BD96100072C60 /* CollectionPrettyViewCell.swift */; };
+		05C8594A254BD96100072C60 /* CollectionPrettyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C85948254BD96100072C60 /* CollectionPrettyViewCell.xib */; };
+		05C85950254BDBE300072C60 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C8594E254BDBE300072C60 /* CollectionHeaderView.swift */; };
+		05C85951254BDBE300072C60 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C8594F254BDBE300072C60 /* CollectionHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +85,12 @@
 		055690BC2549179E009F1AA1 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		055690C1254917A8009F1AA1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		05569157254971D1009F1AA1 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		05C85940254BC6A800072C60 /* CollectionNormalViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionNormalViewCell.swift; sourceTree = "<group>"; };
+		05C85941254BC6A800072C60 /* CollectionNormalViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalViewCell.xib; sourceTree = "<group>"; };
+		05C85947254BD96100072C60 /* CollectionPrettyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyViewCell.swift; sourceTree = "<group>"; };
+		05C85948254BD96100072C60 /* CollectionPrettyViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyViewCell.xib; sourceTree = "<group>"; };
+		05C8594E254BDBE300072C60 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		05C8594F254BDBE300072C60 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +143,8 @@
 		0502E81F254A93DD00883B8D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				05C8594E254BDBE300072C60 /* CollectionHeaderView.swift */,
+				05C8594F254BDBE300072C60 /* CollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,6 +316,10 @@
 			children = (
 				0502E805254A62AD00883B8D /* PageTitleView.swift */,
 				0502E818254A8B1200883B8D /* PageContView.swift */,
+				05C85947254BD96100072C60 /* CollectionPrettyViewCell.swift */,
+				05C85948254BD96100072C60 /* CollectionPrettyViewCell.xib */,
+				05C85940254BC6A800072C60 /* CollectionNormalViewCell.swift */,
+				05C85941254BC6A800072C60 /* CollectionNormalViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -421,8 +439,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0556905D25490D30009F1AA1 /* LaunchScreen.storyboard in Resources */,
+				05C85943254BC6A800072C60 /* CollectionNormalViewCell.xib in Resources */,
 				0556905A25490D30009F1AA1 /* Assets.xcassets in Resources */,
+				05C8594A254BD96100072C60 /* CollectionPrettyViewCell.xib in Resources */,
 				0556905525490D2F009F1AA1 /* Main.storyboard in Resources */,
+				05C85951254BDBE300072C60 /* CollectionHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +472,7 @@
 				0502E82C254A945C00883B8D /* ThiredViewController.swift in Sources */,
 				0502E822254A944A00883B8D /* FirstViewController.swift in Sources */,
 				05569158254971D1009F1AA1 /* UIBarButtonItem-Extension.swift in Sources */,
+				05C85949254BD96100072C60 /* CollectionPrettyViewCell.swift in Sources */,
 				0502E806254A62AD00883B8D /* PageTitleView.swift in Sources */,
 				0556909925491491009F1AA1 /* TabbarViewController.swift in Sources */,
 				055690C2254917A8009F1AA1 /* ProfileViewController.swift in Sources */,
@@ -461,8 +483,10 @@
 				055690A1254915BE009F1AA1 /* NavigationViewController.swift in Sources */,
 				0502E831254A946F00883B8D /* FourthViewController.swift in Sources */,
 				0502E814254A6F9600883B8D /* UIColor-Extension.swift in Sources */,
+				05C85942254BC6A800072C60 /* CollectionNormalViewCell.swift in Sources */,
 				0556905825490D2F009F1AA1 /* DYZB.xcdatamodeld in Sources */,
 				055690B32549178A009F1AA1 /* HomeViewController.swift in Sources */,
+				05C85950254BDBE300072C60 /* CollectionHeaderView.swift in Sources */,
 				055690AB2549174B009F1AA1 /* BaseViewController.swift in Sources */,
 				0502E80C254A674600883B8D /* comment.swift in Sources */,
 			);
@@ -643,8 +667,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage ";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3BCN7Y2B7;
 				INFOPLIST_FILE = "DYZB/Supportting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -665,8 +690,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage ";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3BCN7Y2B7;
 				INFOPLIST_FILE = "DYZB/Supportting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

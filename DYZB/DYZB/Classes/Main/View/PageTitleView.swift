@@ -65,7 +65,7 @@ fileprivate extension PageTitleView {
     func addLabel() {
         let labeY: CGFloat = 0.0
         let labeW: CGFloat = bounds.width/CGFloat(titles.count)
-        let labeH: CGFloat = CGFloat(kTabBarH)
+        let labeH: CGFloat = CGFloat(kTitleViewH)
         //MARK: 创建Label
         for (index, title) in titles.enumerated() {
             let label = UILabel()
@@ -84,7 +84,7 @@ fileprivate extension PageTitleView {
         }
     }
     func addSubline() {
-        let lineFrame = CGRect(x: 0, y: kTabBarH - subLineH, width: Double(kScreenW), height: subLineH)
+        let lineFrame = CGRect(x: 0, y: kTitleViewH - subLineH, width: Double(kScreenW), height: subLineH)
         let lineView = UIView(frame: lineFrame)
         lineView.backgroundColor = .lightGray
         addSubview(lineView)
@@ -92,7 +92,7 @@ fileprivate extension PageTitleView {
         guard let firstLabel = titleLabels.first else { return }
         firstLabel.textColor = UIColor(r: kSelectColor.0, g: kSelectColor.1, b: kSelectColor.2, a: 1)
         
-        let scrollFrame = CGRect(x: Double(CGFloat(currIndex) * firstLabel.frame.width)  , y: kTabBarH - scrollLineH, width: Double(firstLabel.frame.width) , height: scrollLineH)
+        let scrollFrame = CGRect(x: Double(CGFloat(currIndex) * firstLabel.frame.width)  , y: kTitleViewH - scrollLineH, width: Double(firstLabel.frame.width) , height: scrollLineH)
         scrolLine.frame = scrollFrame
         scrollView.addSubview(scrolLine)
     }
@@ -122,7 +122,18 @@ fileprivate extension PageTitleView{
 }
 //MARK:- 外接接口
 extension PageTitleView{
-    func setCurrentIndex(_ currenIndex: Int)  {
+    func setCurrentIndex(sourIndex oldIndex: Int, targeIndex willIndex: Int, progress ration: CGFloat)  {
+        let oldLabel = titleLabels[oldIndex]
+        let willLabel = titleLabels[willIndex]
+        let rangColor = (kSelectColor.0 - kNormalColor.0, kSelectColor.1 - kNormalColor.1, kSelectColor.2 - kNormalColor.2)
+        //TODO:- 定义运算符
+        oldLabel.textColor = UIColor(r: kSelectColor.0 - rangColor.0 * ration, g: kSelectColor.1 - rangColor.1 * ration, b: kSelectColor.2 - rangColor.2 * ration, a: 1)
+        willLabel.textColor = UIColor(r: kNormalColor.0 + rangColor.0 * ration, g: kNormalColor.1 + rangColor.1 * ration, b: kNormalColor.2 + rangColor.2 * ration, a: 1)
+        //移动滑块
+        let moveTotalX = willLabel.frame.origin.x - oldLabel.frame.origin.x
+        let moveX = moveTotalX * ration
+        scrolLine.frame.origin.x = oldLabel.frame.origin.x + moveX
         
+        currIndex = willIndex
     }
 }
