@@ -18,6 +18,7 @@ fileprivate let kPrettyCellID = "kPrettyCellID"
 fileprivate let kHeaderViewID = "kHeaderViewID"
 
 class FirstViewController: UIViewController {
+    fileprivate lazy var recommendVM : RecommendViewModel = RecommendViewModel()
     fileprivate lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 0
@@ -32,13 +33,14 @@ class FirstViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "CollectionNormalViewCell", bundle: nil), forCellWithReuseIdentifier: kNormakCellID)
         collectionView.register(UINib(nibName: "CollectionPrettyViewCell", bundle: nil), forCellWithReuseIdentifier: kPrettyCellID)
-        collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
+        collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader , withReuseIdentifier: kHeaderViewID)
         return collectionView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
+        loadData()
     }
 
 }
@@ -50,16 +52,22 @@ fileprivate extension FirstViewController {
 extension FirstViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
     func numberOfSections(in collectionView: UICollectionView) -> Int { 12  }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 1 { return 6 }
-        return 4
+//        if section == 1 { return 6 }
+        if recommendVM.totalModel.count == 0 {
+            return 0
+        }else{
+            return 4
+        }
+        
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell: UICollectionViewCell
         if indexPath.section == 1 {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath) as! CollectionPrettyViewCell
+            cell.model = recommendVM.totalModel[indexPath.row + indexPath.section * 4]
             return cell
         }else{
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormakCellID, for: indexPath)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormakCellID, for: indexPath) as! CollectionNormalViewCell
+            cell.model = recommendVM.totalModel[indexPath.row + indexPath.section * 4]
             return cell
         }
     }
@@ -74,7 +82,19 @@ extension FirstViewController: UICollectionViewDelegateFlowLayout, UICollectionV
             return CGSize(width: kNormalItemW, height: kNormalItemH)
         }
     }
-    
-    
+}
+
+extension FirstViewController {
+    func loadData()  {
+        recommendVM.requestData(model: RoomModel.self ) {
+            self.collectionView.reloadData()
+            
+//            self.collectionView.
+        }
+//        recommendVM.requestData {
+//            self.collectionView.reloadData()
+//
+//        }
+    }
 }
 

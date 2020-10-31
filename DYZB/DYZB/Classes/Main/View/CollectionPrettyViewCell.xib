@@ -80,6 +80,12 @@
                 <constraint firstItem="Xoy-PV-gg2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wgE-jN-v6f"/>
             </constraints>
             <size key="customSize" width="158" height="194"/>
+            <connections>
+                <outlet property="cityBtn" destination="oO7-zs-S3g" id="k9d-XP-LKv"/>
+                <outlet property="imageLabel" destination="HJe-gi-2mc" id="Ies-8U-lJH"/>
+                <outlet property="nickNameLabel" destination="Xoy-PV-gg2" id="5OR-sT-kOz"/>
+                <outlet property="onlineLabel" destination="i9M-Mj-Og4" id="QrF-zp-x0n"/>
+            </connections>
             <point key="canvasLocation" x="218.84057971014494" y="136.60714285714286"/>
         </collectionViewCell>
     </objects>

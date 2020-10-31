@@ -30,6 +30,7 @@
 		055690BD2549179E009F1AA1 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055690BC2549179E009F1AA1 /* FollowViewController.swift */; };
 		055690C2254917A8009F1AA1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055690C1254917A8009F1AA1 /* ProfileViewController.swift */; };
 		05569158254971D1009F1AA1 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05569157254971D1009F1AA1 /* UIBarButtonItem-Extension.swift */; };
+		056FFB56254D5CB300D027ED /* RoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056FFB55254D5CB300D027ED /* RoomModel.swift */; };
 		05C85942254BC6A800072C60 /* CollectionNormalViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C85940254BC6A800072C60 /* CollectionNormalViewCell.swift */; };
 		05C85943254BC6A800072C60 /* CollectionNormalViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C85941254BC6A800072C60 /* CollectionNormalViewCell.xib */; };
 		05C85949254BD96100072C60 /* CollectionPrettyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C85947254BD96100072C60 /* CollectionPrettyViewCell.swift */; };
@@ -37,6 +38,8 @@
 		05C85950254BDBE300072C60 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C8594E254BDBE300072C60 /* CollectionHeaderView.swift */; };
 		05C85951254BDBE300072C60 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C8594F254BDBE300072C60 /* CollectionHeaderView.xib */; };
 		05C85962254D022100072C60 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C85961254D022100072C60 /* NetworkTools.swift */; };
+		05C85A23254D40C700072C60 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C85A22254D40C700072C60 /* RecommendViewModel.swift */; };
+		05C85A28254D420700072C60 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C85A27254D420700072C60 /* NSDate-Extension.swift */; };
 		4EF9A1CA95DB6620B3C64390 /* Pods_DYZB_DYZBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6535FAAD3FB798C8DBA6B47 /* Pods_DYZB_DYZBUITests.framework */; };
 		A1CC03343593982330CBFD8C /* Pods_DYZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860A17D905C61EB1DF071C9E /* Pods_DYZB.framework */; };
 		DCF485F31052FBCE83790C33 /* Pods_DYZBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DF5A69E59D81E83CCDF285 /* Pods_DYZBTests.framework */; };
@@ -90,6 +93,7 @@
 		055690BC2549179E009F1AA1 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		055690C1254917A8009F1AA1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		05569157254971D1009F1AA1 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		056FFB55254D5CB300D027ED /* RoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomModel.swift; sourceTree = "<group>"; };
 		05C85940254BC6A800072C60 /* CollectionNormalViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionNormalViewCell.swift; sourceTree = "<group>"; };
 		05C85941254BC6A800072C60 /* CollectionNormalViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalViewCell.xib; sourceTree = "<group>"; };
 		05C85947254BD96100072C60 /* CollectionPrettyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyViewCell.swift; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 		05C8594E254BDBE300072C60 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		05C8594F254BDBE300072C60 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		05C85961254D022100072C60 /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		05C85A22254D40C700072C60 /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		05C85A27254D420700072C60 /* NSDate-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
 		4DD5CD417652BB537EF14E92 /* Pods-DYZBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZBTests.debug.xcconfig"; path = "Target Support Files/Pods-DYZBTests/Pods-DYZBTests.debug.xcconfig"; sourceTree = "<group>"; };
 		65772038B95A38EB39A8BB60 /* Pods-DYZB-DYZBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB-DYZBUITests.release.xcconfig"; path = "Target Support Files/Pods-DYZB-DYZBUITests/Pods-DYZB-DYZBUITests.release.xcconfig"; sourceTree = "<group>"; };
 		79B243C3A19E9A261FF9373B /* Pods-DYZB-DYZBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB-DYZBUITests.debug.xcconfig"; path = "Target Support Files/Pods-DYZB-DYZBUITests/Pods-DYZB-DYZBUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +152,7 @@
 		0502E81D254A93D000883B8D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				056FFB55254D5CB300D027ED /* RoomModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +160,7 @@
 		0502E81E254A93D800883B8D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				05C85A22254D40C700072C60 /* RecommendViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -313,6 +321,7 @@
 			children = (
 				05569157254971D1009F1AA1 /* UIBarButtonItem-Extension.swift */,
 				0502E813254A6F9600883B8D /* UIColor-Extension.swift */,
+				05C85A27254D420700072C60 /* NSDate-Extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -626,11 +635,14 @@
 				05C85949254BD96100072C60 /* CollectionPrettyViewCell.swift in Sources */,
 				0502E806254A62AD00883B8D /* PageTitleView.swift in Sources */,
 				0556909925491491009F1AA1 /* TabbarViewController.swift in Sources */,
+				056FFB56254D5CB300D027ED /* RoomModel.swift in Sources */,
 				055690C2254917A8009F1AA1 /* ProfileViewController.swift in Sources */,
 				055690B825491795009F1AA1 /* LiveViewController.swift in Sources */,
 				0502E819254A8B1200883B8D /* PageContView.swift in Sources */,
+				05C85A28254D420700072C60 /* NSDate-Extension.swift in Sources */,
 				055690BD2549179E009F1AA1 /* FollowViewController.swift in Sources */,
 				0556904E25490D2F009F1AA1 /* AppDelegate.swift in Sources */,
+				05C85A23254D40C700072C60 /* RecommendViewModel.swift in Sources */,
 				05C85962254D022100072C60 /* NetworkTools.swift in Sources */,
 				055690A1254915BE009F1AA1 /* NavigationViewController.swift in Sources */,
 				0502E831254A946F00883B8D /* FourthViewController.swift in Sources */,
