@@ -1,0 +1,6 @@
+framework module Pods_DYZBTests {
+  umbrella header "Pods-DYZBTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

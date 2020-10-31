@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -36,6 +36,10 @@
 		05C8594A254BD96100072C60 /* CollectionPrettyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C85948254BD96100072C60 /* CollectionPrettyViewCell.xib */; };
 		05C85950254BDBE300072C60 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C8594E254BDBE300072C60 /* CollectionHeaderView.swift */; };
 		05C85951254BDBE300072C60 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C8594F254BDBE300072C60 /* CollectionHeaderView.xib */; };
+		05C85962254D022100072C60 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C85961254D022100072C60 /* NetworkTools.swift */; };
+		4EF9A1CA95DB6620B3C64390 /* Pods_DYZB_DYZBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6535FAAD3FB798C8DBA6B47 /* Pods_DYZB_DYZBUITests.framework */; };
+		A1CC03343593982330CBFD8C /* Pods_DYZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860A17D905C61EB1DF071C9E /* Pods_DYZB.framework */; };
+		DCF485F31052FBCE83790C33 /* Pods_DYZBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DF5A69E59D81E83CCDF285 /* Pods_DYZBTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00B2783C9C3FE86F1FC279F4 /* Pods-DYZB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.release.xcconfig"; path = "Target Support Files/Pods-DYZB/Pods-DYZB.release.xcconfig"; sourceTree = "<group>"; };
 		0502E805254A62AD00883B8D /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		0502E80B254A674600883B8D /* comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comment.swift; sourceTree = "<group>"; };
 		0502E813254A6F9600883B8D /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
@@ -91,6 +96,15 @@
 		05C85948254BD96100072C60 /* CollectionPrettyViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyViewCell.xib; sourceTree = "<group>"; };
 		05C8594E254BDBE300072C60 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		05C8594F254BDBE300072C60 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
+		05C85961254D022100072C60 /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		4DD5CD417652BB537EF14E92 /* Pods-DYZBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZBTests.debug.xcconfig"; path = "Target Support Files/Pods-DYZBTests/Pods-DYZBTests.debug.xcconfig"; sourceTree = "<group>"; };
+		65772038B95A38EB39A8BB60 /* Pods-DYZB-DYZBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB-DYZBUITests.release.xcconfig"; path = "Target Support Files/Pods-DYZB-DYZBUITests/Pods-DYZB-DYZBUITests.release.xcconfig"; sourceTree = "<group>"; };
+		79B243C3A19E9A261FF9373B /* Pods-DYZB-DYZBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB-DYZBUITests.debug.xcconfig"; path = "Target Support Files/Pods-DYZB-DYZBUITests/Pods-DYZB-DYZBUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		860A17D905C61EB1DF071C9E /* Pods_DYZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DF5A69E59D81E83CCDF285 /* Pods_DYZBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYZBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C317E39106310E879987BA06 /* Pods-DYZB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.debug.xcconfig"; path = "Target Support Files/Pods-DYZB/Pods-DYZB.debug.xcconfig"; sourceTree = "<group>"; };
+		C86EAE2C9D0345FC94B70F92 /* Pods-DYZBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZBTests.release.xcconfig"; path = "Target Support Files/Pods-DYZBTests/Pods-DYZBTests.release.xcconfig"; sourceTree = "<group>"; };
+		E6535FAAD3FB798C8DBA6B47 /* Pods_DYZB_DYZBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYZB_DYZBUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1CC03343593982330CBFD8C /* Pods_DYZB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF485F31052FBCE83790C33 /* Pods_DYZBTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF9A1CA95DB6620B3C64390 /* Pods_DYZB_DYZBUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +185,8 @@
 				0556906625490D31009F1AA1 /* DYZBTests */,
 				0556907125490D31009F1AA1 /* DYZBUITests */,
 				0556904B25490D2F009F1AA1 /* Products */,
+				4A2EF6E2D72F10644857A488 /* Pods */,
+				1247D2BDA2EB1DD3838A5932 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -284,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				055691562549717F009F1AA1 /* extension */,
+				05C85961254D022100072C60 /* NetworkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -335,6 +355,29 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		1247D2BDA2EB1DD3838A5932 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				860A17D905C61EB1DF071C9E /* Pods_DYZB.framework */,
+				E6535FAAD3FB798C8DBA6B47 /* Pods_DYZB_DYZBUITests.framework */,
+				B7DF5A69E59D81E83CCDF285 /* Pods_DYZBTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A2EF6E2D72F10644857A488 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C317E39106310E879987BA06 /* Pods-DYZB.debug.xcconfig */,
+				00B2783C9C3FE86F1FC279F4 /* Pods-DYZB.release.xcconfig */,
+				79B243C3A19E9A261FF9373B /* Pods-DYZB-DYZBUITests.debug.xcconfig */,
+				65772038B95A38EB39A8BB60 /* Pods-DYZB-DYZBUITests.release.xcconfig */,
+				4DD5CD417652BB537EF14E92 /* Pods-DYZBTests.debug.xcconfig */,
+				C86EAE2C9D0345FC94B70F92 /* Pods-DYZBTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -342,9 +385,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0556907725490D31009F1AA1 /* Build configuration list for PBXNativeTarget "DYZB" */;
 			buildPhases = (
+				783B1CB608EBE2FA1D33708B /* [CP] Check Pods Manifest.lock */,
 				0556904625490D2F009F1AA1 /* Sources */,
 				0556904725490D2F009F1AA1 /* Frameworks */,
 				0556904825490D2F009F1AA1 /* Resources */,
+				7AFA151F9F060E16EBD09D67 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -359,6 +404,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0556907A25490D31009F1AA1 /* Build configuration list for PBXNativeTarget "DYZBTests" */;
 			buildPhases = (
+				69FAA835F2567D1FC8400CBB /* [CP] Check Pods Manifest.lock */,
 				0556905F25490D31009F1AA1 /* Sources */,
 				0556906025490D31009F1AA1 /* Frameworks */,
 				0556906125490D31009F1AA1 /* Resources */,
@@ -377,9 +423,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0556907D25490D31009F1AA1 /* Build configuration list for PBXNativeTarget "DYZBUITests" */;
 			buildPhases = (
+				E5B89F4B88EEDAE9F30AF970 /* [CP] Check Pods Manifest.lock */,
 				0556906A25490D31009F1AA1 /* Sources */,
 				0556906B25490D31009F1AA1 /* Frameworks */,
 				0556906C25490D31009F1AA1 /* Resources */,
+				A8C70F874E8129BF086A72E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -463,6 +511,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		69FAA835F2567D1FC8400CBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DYZBTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		783B1CB608EBE2FA1D33708B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DYZB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AFA151F9F060E16EBD09D67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DYZB/Pods-DYZB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DYZB/Pods-DYZB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DYZB/Pods-DYZB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8C70F874E8129BF086A72E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DYZB-DYZBUITests/Pods-DYZB-DYZBUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DYZB-DYZBUITests/Pods-DYZB-DYZBUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DYZB-DYZBUITests/Pods-DYZB-DYZBUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5B89F4B88EEDAE9F30AF970 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DYZB-DYZBUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0556904625490D2F009F1AA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -480,6 +631,7 @@
 				0502E819254A8B1200883B8D /* PageContView.swift in Sources */,
 				055690BD2549179E009F1AA1 /* FollowViewController.swift in Sources */,
 				0556904E25490D2F009F1AA1 /* AppDelegate.swift in Sources */,
+				05C85962254D022100072C60 /* NetworkTools.swift in Sources */,
 				055690A1254915BE009F1AA1 /* NavigationViewController.swift in Sources */,
 				0502E831254A946F00883B8D /* FourthViewController.swift in Sources */,
 				0502E814254A6F9600883B8D /* UIColor-Extension.swift in Sources */,
@@ -661,6 +813,7 @@
 		};
 		0556907825490D31009F1AA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C317E39106310E879987BA06 /* Pods-DYZB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -669,7 +822,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W3BCN7Y2B7;
 				INFOPLIST_FILE = "DYZB/Supportting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -684,6 +837,7 @@
 		};
 		0556907925490D31009F1AA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B2783C9C3FE86F1FC279F4 /* Pods-DYZB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -692,7 +846,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W3BCN7Y2B7;
 				INFOPLIST_FILE = "DYZB/Supportting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -707,6 +861,7 @@
 		};
 		0556907B25490D31009F1AA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DD5CD417652BB537EF14E92 /* Pods-DYZBTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -728,6 +883,7 @@
 		};
 		0556907C25490D31009F1AA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C86EAE2C9D0345FC94B70F92 /* Pods-DYZBTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -749,6 +905,7 @@
 		};
 		0556907E25490D31009F1AA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79B243C3A19E9A261FF9373B /* Pods-DYZB-DYZBUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -768,6 +925,7 @@
 		};
 		0556907F25490D31009F1AA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65772038B95A38EB39A8BB60 /* Pods-DYZB-DYZBUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
