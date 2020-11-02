@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gameID" id="gTV-IL-0wX" customClass="CollectionGameViewCell" customModule="DYZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BJR-2Z-Ila">
+                        <rect key="frame" x="17.5" y="14.5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="Dno-cA-vpz"/>
+                            <constraint firstAttribute="height" constant="45" id="r1l-9u-Zxc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="22.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英雄联盟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0F-mf-z44">
+                        <rect key="frame" x="15.5" y="64.5" width="49.5" height="14.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14.5" id="2ek-Il-025"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="BJR-2Z-Ila" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="2Fk-vG-NhV"/>
+                <constraint firstItem="J0F-mf-z44" firstAttribute="top" secondItem="BJR-2Z-Ila" secondAttribute="bottom" constant="5" id="GZl-mD-2lS"/>
+                <constraint firstItem="J0F-mf-z44" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="IQD-jZ-mtm"/>
+                <constraint firstItem="BJR-2Z-Ila" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-8" id="PB8-8m-KJ7"/>
+            </constraints>
+            <size key="customSize" width="215" height="187"/>
+            <connections>
+                <outlet property="iconImage" destination="BJR-2Z-Ila" id="itQ-4h-Hzr"/>
+                <outlet property="titleLabel" destination="J0F-mf-z44" id="wSH-EQ-rTU"/>
+            </connections>
+            <point key="canvasLocation" x="9.4202898550724647" y="135.60267857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

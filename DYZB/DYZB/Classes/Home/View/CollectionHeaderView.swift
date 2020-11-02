@@ -6,12 +6,23 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CollectionHeaderView: UICollectionReusableView {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var iconImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var moreBtn: UIButton!
+    
+    var model: Group? {
+        didSet{
+            titleLabel.text = model?.tag_name
+            iconImageView.image = UIImage(named: model?.icon_name ?? "home_header_normal")
+        }
     }
+    
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+//
+//    }
     
 }

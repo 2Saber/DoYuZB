@@ -7,8 +7,7 @@ target 'DYZB' do
     pod 'KakaJSON', '1.1.2'
     pod 'Alamofire'
     pod 'Kingfisher'
-  # Pods for DYZB
-
+    pod 'SnapKit'
   target 'DYZBTests' do
     inherit! :search_paths
     # Pods for testing
