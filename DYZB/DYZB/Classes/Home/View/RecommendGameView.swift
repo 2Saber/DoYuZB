@@ -8,6 +8,7 @@
 import UIKit
 fileprivate let gameID = "gameID"
 private let kEdgeInsetMargin : CGFloat = 20
+fileprivate let kGameViewH : CGFloat = 90
 class RecommendGameView: UIView {
 
     var models:[Group]? {

@@ -11,7 +11,7 @@ fileprivate let collectCycleID = "collectCycleID"
 fileprivate let pageControlW:CGFloat = 40
 fileprivate let pageControlMargin: CGFloat = 10
 fileprivate let pageControlH: CGFloat = 27.5
-
+fileprivate let kCycleViewH = kScreenW * 3 / 8
 
 class RecommenCycleView: UIView {
     

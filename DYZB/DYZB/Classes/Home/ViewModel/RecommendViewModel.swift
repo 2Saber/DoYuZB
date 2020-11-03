@@ -9,9 +9,8 @@ import Foundation
 import Alamofire
 import KakaJSON
 
-class RecommendViewModel {
+class RecommendViewModel: BaseViewModel {
     lazy var cycleModels: [CycleModel] = [CycleModel]()
-    lazy var totalModel:[Group] = [Group]()
     fileprivate lazy var bigDataGroup:Group = Group()
     fileprivate lazy var prettyGroup:Group = Group()
     
