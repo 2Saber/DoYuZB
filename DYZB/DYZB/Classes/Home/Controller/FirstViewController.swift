@@ -40,11 +40,11 @@ extension FirstViewController: UICollectionViewDelegateFlowLayout {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.section == 1 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath) as! CollectionPrettyViewCell
-            cell.model = recommendVM.totalModel[indexPath.section].room_list[indexPath.row]
+            cell.model = (recommendVM.totalModel[indexPath.section].room_list![indexPath.row] as? RoomModel)
             return cell
         }else{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormakCellID, for: indexPath) as! CollectionNormalViewCell
-            cell.model = recommendVM.totalModel[indexPath.section].room_list[indexPath.row]
+            cell.model = (recommendVM.totalModel[indexPath.section].room_list![indexPath.row] as? RoomModel)
             return cell
         }
     }

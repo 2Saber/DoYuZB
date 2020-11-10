@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import KakaJSON
 
-struct Group: Convertible {
+class Group: BaseModel {
     var icon_name: String?
     var icon_url: String?
     var small_icon_url: String = ""
@@ -17,8 +17,15 @@ struct Group: Convertible {
     var tag_id: Int = 0
     var push_vertical_screen: CGFloat = 0
     var push_nearby:Int = 0
-    var room_list: [RoomModel] = [RoomModel]()
+//    init(tag_name: String) {
+//        self.tag_name = tag_name
+//    }
+//    
+//    required init() {
+//        fatalError("init() has not been implemented")
+//    }
 }
+
 struct RoomModel: Convertible {
     var room_id: Int = 0
     var show_time: Int? = nil

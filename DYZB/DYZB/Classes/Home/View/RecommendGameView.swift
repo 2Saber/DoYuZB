@@ -15,7 +15,8 @@ class RecommendGameView: UIView {
         didSet{
             models?.remove(at: 0)
             models?.remove(at: 0)
-            let tmpGroup = Group( icon_url: nil, tag_name: "更多")
+//            let tmpGroup = Group(tag_name: "更多")
+            let tmpGroup = Group()
             models?.append(tmpGroup)
             collection.reloadData()
         }

@@ -63,7 +63,7 @@ extension BaseAnchorViewController{
 extension BaseAnchorViewController: UICollectionViewDataSource{
     func numberOfSections(in collectionView: UICollectionView) -> Int { baseVM.totalModel.count  }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return baseVM.totalModel[section].room_list.count
+        return baseVM.totalModel[section].room_list?.count ?? 0
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormakCellID, for: indexPath) as! CollectionNormalViewCell

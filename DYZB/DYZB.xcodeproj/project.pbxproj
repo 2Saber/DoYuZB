@@ -15,6 +15,8 @@
 		0502E827254A945200883B8D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0502E826254A945200883B8D /* SecondViewController.swift */; };
 		0502E82C254A945C00883B8D /* ThiredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0502E82B254A945C00883B8D /* ThiredViewController.swift */; };
 		0502E831254A946F00883B8D /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0502E830254A946F00883B8D /* FourthViewController.swift */; };
+		0525D72425593802008C9A27 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0525D72325593802008C9A27 /* BaseModel.swift */; };
+		0525D733255949CF008C9A27 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0525D732255949CE008C9A27 /* GameModel.swift */; };
 		0556904E25490D2F009F1AA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556904D25490D2F009F1AA1 /* AppDelegate.swift */; };
 		0556905525490D2F009F1AA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0556905325490D2F009F1AA1 /* Main.storyboard */; };
 		0556905825490D2F009F1AA1 /* DYZB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0556905625490D2F009F1AA1 /* DYZB.xcdatamodeld */; };
@@ -81,6 +83,8 @@
 		0502E826254A945200883B8D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		0502E82B254A945C00883B8D /* ThiredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThiredViewController.swift; sourceTree = "<group>"; };
 		0502E830254A946F00883B8D /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		0525D72325593802008C9A27 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		0525D732255949CE008C9A27 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		0556904A25490D2F009F1AA1 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0556904D25490D2F009F1AA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0556905425490D2F009F1AA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -170,8 +174,10 @@
 		0502E81D254A93D000883B8D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0525D72325593802008C9A27 /* BaseModel.swift */,
 				056FFB55254D5CB300D027ED /* RoomModel.swift */,
 				056FFB8E254EB89200D027ED /* CycleModel.swift */,
+				0525D732255949CE008C9A27 /* GameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -662,12 +668,14 @@
 				0502E822254A944A00883B8D /* FirstViewController.swift in Sources */,
 				056FFC6B2551565800D027ED /* GameViewModel.swift in Sources */,
 				056FFB94254ECA4A00D027ED /* RecommendGameView.swift in Sources */,
+				0525D733255949CF008C9A27 /* GameModel.swift in Sources */,
 				056FFBA8254F8BD500D027ED /* BaseAnchorViewController.swift in Sources */,
 				05569158254971D1009F1AA1 /* UIBarButtonItem-Extension.swift in Sources */,
 				05C85949254BD96100072C60 /* CollectionPrettyViewCell.swift in Sources */,
 				056FFB9A254ECA9B00D027ED /* CollectionGameViewCell.swift in Sources */,
 				0502E806254A62AD00883B8D /* PageTitleView.swift in Sources */,
 				0556909925491491009F1AA1 /* TabbarViewController.swift in Sources */,
+				0525D72425593802008C9A27 /* BaseModel.swift in Sources */,
 				056FFB79254EAEB500D027ED /* CollectionCycleViewCell.swift in Sources */,
 				056FFB56254D5CB300D027ED /* RoomModel.swift in Sources */,
 				055690C2254917A8009F1AA1 /* ProfileViewController.swift in Sources */,

@@ -13,8 +13,7 @@ fileprivate let kItemH : CGFloat = kItemW * 6 / 5
 
 fileprivate let gameID = "gameID"
 class SecondViewController: BaseAnchorViewController {
-    lazy fileprivate var gameVM: Group = Group()
-
+    lazy fileprivate var gameVM: GameViewModel = GameViewModel()
 }
 extension SecondViewController {
     override func setUp() {
@@ -27,7 +26,7 @@ extension SecondViewController {
 }
 extension SecondViewController{
     override func loadData() {
-        
+        baseVM = gameVM
     }
 }
 

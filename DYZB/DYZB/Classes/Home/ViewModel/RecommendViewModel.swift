@@ -25,10 +25,13 @@ extension RecommendViewModel {
         NetworkTools.requestData(.get, URLString: "http://capi.douyucdn.cn/api/v1/getbigDataRoom", parameters: parameters) { (result) in
             guard let resultDict =  result as? [String: Any] else{ return }
             guard let dataArray = resultDict["data"] as? [[String: Any]] else { return }
+            self.bigDataGroup.room_list = [RoomModel]()
             for dict in dataArray{
-                self.bigDataGroup.room_list.append(dict.kj.model(type: RoomModel.self) as! RoomModel)
+//                let model = dict.kj.model(type: RoomModel.self) as! RoomModel
+//                self.bigDataGroup.room_list?.append(model)
+//                print(model)
+                self.bigDataGroup.room_list?.append(dict.kj.model(type: RoomModel.self) as! RoomModel)
             }
-//            print("bitData.coun = \(self.bigDataGroup.room_list.count)")
             self.bigDataGroup.tag_name = "热点"
             self.bigDataGroup.icon_name = "home_header_hot"
             dGroup.leave()
@@ -38,8 +41,12 @@ extension RecommendViewModel {
         NetworkTools.requestData(.get, URLString: "http://capi.douyucdn.cn/api/v1/getVerticalRoom", parameters: parameters) { (result) in
             guard let resultDict = result as? [String: Any] else{ return }
             guard let dataArray = resultDict["data"] as? [[String: Any]] else{ return }
+            self.prettyGroup.room_list = [RoomModel]()
             for dict in dataArray{
-                self.prettyGroup.room_list.append(dict.kj.model(type: RoomModel.self) as! RoomModel)
+//                let model =
+//                self.prettyGroup.room_list?.append(model)
+//                print(model)
+                self.prettyGroup.room_list?.append(dict.kj.model(type: RoomModel.self) as! RoomModel)
             }
 //            print("prettyGroup.coun = \(self.prettyGroup.room_list.count)")
             self.prettyGroup.tag_name = "颜值"
